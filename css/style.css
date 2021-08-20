@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --verydarkmagenta: hsl(300, 43%, 22%);
+
+  --softpink: hsl(333, 80%, 67%);
+  --darkgrayishmagenta: hsl(303, 10%, 53%);
+  --lightgrayishmagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url('../images/bg-pattern-top-desktop.svg');
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  background: url('../images/bg-pattern-bottom-desktop.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.up-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1100px;
+  margin: 108px auto;
+  margin-bottom: 80px;
+}
+
+header h1 {
+  color: var(--verydarkmagenta);
+  font-weight: 700;
+  font-size: 2.95rem;
+}
+
+header p {
+  color: var(--darkgrayishmagenta);
+
+  line-height: 25px;
+}
+
+
+.rated-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.rated {
+  display: flex;
+  height: 4rem;
+  width: 28rem;
+  background-color: var(--lightgrayishmagenta);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.star img {
+  height: 14px;
+  width: 14px;
+
+}
+
+.star {
+  padding-right: 12px;
+}
+
+.first-raiting {
+
+  align-self: flex-start;
+}
+
+.seconde-raiting {
+
+  align-self: center;
+}
+
+.third-raiting {
+
+  align-self: flex-end;
+}
+
+
+
+.down-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 310px;
+
+}
+
+.card {
+  height: 15rem;
+  width: 22.1rem;
+  font-size: 14px;
+  border-radius: 0.6rem;
+  background-color: var(--verydarkmagenta);
+  margin: 1rem;
+  padding: 1rem;
+
+}
+
+.text-card p {
+  color: #fff;
+  line-height: 1.2rem;
+  font-size: .7rem;
+}
+
+.one {
+  align-self: flex-start;
+}
+
+.two {
+  align-self: center;
+}
+
+.three {
+  align-self: flex-end;
+}
+
+.photo img {
+  border-radius: 50%;
+  height: 4.25rem;
+  margin: 1rem;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+}
+
+.name p {
+  color: var(--softpink);
+
+}
+
+.name h4 {
+  color: #fff;
+  line-height: 1.3rem;
+  padding: 0.3rem;
+}
+
+/* Mobile*/
+@media only screen and (max-width:480px) {
+
+  body {
+    background: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+  }
+
+  header,
+  section,
+  .up-container,
+  .down-container,
+  .card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  h1 {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 2em;
+  }
+
+   .down-container{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .rated-container .rated{
+    width: 90%;
+    display: block;
+  }
+}
+
+
